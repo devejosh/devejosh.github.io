@@ -28,7 +28,8 @@ body
 .logo-box{
 	position:absolute;
 	top: 40px;
-	left: 40px;
+	left: 50%;
+	transform: translate(-50% , 0);
 }
 
 .logo{
@@ -51,6 +52,7 @@ body
 {
 	color:#fff;
 	text-transform: uppercase;
+	backface-visibility: hidden;
 }
 
 .heading-primary-main
@@ -59,12 +61,104 @@ body
 	font-size:40px;
 	font-weight: 700;
 	letter-spacing: 10px;
+	animation-name:movefromleft;
+	animation-duration:1s;
+	animation-timing-function:ease-in;
+	margin-bottom:1rem;
 }
 
 .heading-primary-sub
 {
 	display: block;
-	font-size:20px;
+	font-size:16px;
 	font-weight: 400;
 	letter-spacing:7px;
+	margin:1rem 0;
+	animation-name:movefromright;
+	animation-duration:1s;
+	animation-timing-function: ease-in;
+}
+
+/* KEYFRAME ANIMATIONS */
+@keyframes movefromleft
+{
+	0%{
+		opacity: 0;
+		transform:translateX( -200px );
+	}
+
+	80%
+	{
+		opacity:.4;
+	}
+
+	100%{
+		opacity :1;
+		transform:translateX(0);
+	}
+}
+
+@keyframes movefromright
+{
+	0%
+	{
+		opacity:0;
+		transform:translateX(500px);
+	}
+
+	80%
+	{
+		opacity: .2;
+	}
+
+	100%
+	{
+		opacity:1;
+		transform:translateX(0);
+
+	}
+}
+
+/* -- Buttons --*/
+
+.btn,
+.btn:link,
+.btn:visited
+{
+	text-decoration:none;
+	display:inline-block;
+	padding:.7rem 2rem;
+
+}
+
+.btn:hover
+{
+	transform:translateY(-3px);
+	transition:all .2s;
+}
+
+.btn:active
+{
+	transform: translateY(-1px);
+	transition: all .2s;
+}
+
+.btn-white
+{
+	background-color: #fff;
+}
+
+
+.main-btn
+{
+	margin-top:1rem;
+	border:2px solid #fff;
+	color:#fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-radius: 8px;
+	font-size:.9rem;
+	letter-spacing:3px;
+	background-color: rgba(0, 0, 0, 0.39);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.582);
 }
