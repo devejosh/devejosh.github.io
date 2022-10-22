@@ -7,11 +7,25 @@
 }
 
 body {
-  font-family: "lato", sans-serif;
+  font-family: "Segoe UI", "lato", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   line-height: 1.7;
   font-size: 16px;
   color: #777;
+}
+
+a,
+a:hover,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  min-width: 1000px;
+  max-width: 1000px;
+  margin: 0px auto;
 }
 
 .header {
@@ -145,14 +159,30 @@ body {
 /* Footer */
 
 .footer-wrapper {
-  display: flex;
   background-color: rgba(0, 0, 0, 0.788);
   color: #fff;
+  padding: 1rem;
 }
 
-.footer-left,
-.footer-center,
-.footer-right {
-  padding: 1rem;
-  width: 33%;
+.footer-wrapper .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-left a {
+  color: green;
+  font-weight: 600;
+  border-right: 2px solid white;
+  padding-right: 1rem;
+}
+
+.footer-left a:first-child,
+.footer-left a:last-child {
+  border: none;
+}
+
+.footer-left:nth-child(4),
+.footer-left:nth-child(5) {
+  padding-left: 1rem;
 }
