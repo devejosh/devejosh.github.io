@@ -156,6 +156,54 @@ a:link {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.582);
 }
 
+/* Resume section */
+
+section h2 {
+  padding: 30px 0px;
+}
+
+/* -- Experience section -- */
+
+.company-details {
+  display: flex;
+  line-height: 1.5;
+  margin: 20px 0px;
+}
+
+.company-details--company-name {
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.company-details--company-logo img {
+  height: 44px;
+}
+
+.company-details--total-exp {
+  font-size: 0.8rem;
+}
+
+.desig-wrapper-sub {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+.desig-wrapper-sub p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.desig-wrapper-sub p:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+.desig-wrapper-sub ul {
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.desig-wrapper-sub ul li {
+  padding: 0.15rem 0;
+}
 /* Footer */
 
 .footer-wrapper {
@@ -163,26 +211,17 @@ a:link {
   color: #fff;
   padding: 1rem;
 }
-
 .footer-wrapper .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-.footer-left a {
+.footer-wrapper .container p {
+  margin-right: 20px;
+  border-right: 2px solid #fff;
+  padding-right: 20px;
+}
+.footer-wrapper a {
   color: green;
   font-weight: 600;
-  border-right: 2px solid white;
   padding-right: 1rem;
-}
-
-.footer-left a:first-child,
-.footer-left a:last-child {
-  border: none;
-}
-
-.footer-left:nth-child(4),
-.footer-left:nth-child(5) {
-  padding-left: 1rem;
 }
