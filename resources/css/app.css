@@ -201,9 +201,17 @@ section h2 {
   font-size: 0.9rem;
 }
 
+/* -- For subheadings inside ul */
+.desig-wrapper-ul--subheading{
+    padding : .9rem 0;
+    text-decoration : underline;
+}
+
+
 .desig-wrapper-sub ul li {
   padding: 0.15rem 0;
 }
+
 /* Footer */
 
 .footer-wrapper {
