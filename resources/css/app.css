@@ -235,7 +235,7 @@ section h2 {
 }
 
 /* For Mobile device */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
   .container {
     min-width: 100%;
     max-width: 100%;
