@@ -1,0 +1,33 @@
+@media only screen and (max-width: 400px) {
+    .container {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  
+    .about {
+      padding: 0px 30px;
+    }
+      
+  
+    /* -- Footer --*/
+  
+    .footer-wrapper .container {
+      display: block;
+      text-align: center;
+    }
+  
+    .footer-wrapper .container p {
+      border-right: none;
+    }
+  
+    .heading-primary-main {
+      font-size: .9rem;
+    }
+  
+    .heading-primary-sub {
+      font-size: 15px;
+    }
+  }
+  
+  
+  
