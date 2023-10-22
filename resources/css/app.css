@@ -234,8 +234,13 @@ section h2 {
   padding-right: 1rem;
 }
 
-/* For Mobile device */
-@media only screen and (max-width: 500px) {
+/* css for all other screen sizes */
+  
+
+
+/* Styles for screens with a maximum width of 767px (e.g., smartphones) */
+@media (max-width: 767px) {
+  
   .container {
     min-width: 100%;
     max-width: 100%;
@@ -259,6 +264,24 @@ section h2 {
 
   .heading-primary-sub {
     font-size: 15px;
-  }
+}
+
+}
+
+/* Styles for screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+/* Styles for screens with a minimum width of 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+  
+}
+
+/* Additional media queries can be added as needed */
+
+/* Styles for screens with a maximum width of 320px (e.g., smaller smartphones) */
+@media (max-width: 320px) {
+ 
 }
 
