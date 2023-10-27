@@ -15,7 +15,7 @@ class downloadResume {
     }
   }
   
-  const fileURL = 'https://1drv.ms/b/s!AjWrEfYIJFEIkGNEgedxEGxk7OIZ?e=1WPHgG';
+  const fileURL = 'https://1drv.ms/b/s!AjWrEfYIJFEIkGryYWJtJBsA57Dr';
   const suggestedFilename = 'resume.pdf';
   const downloader = new downloadResume(fileURL, suggestedFilename);
   
