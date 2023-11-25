@@ -31,7 +31,7 @@
 
   /*-- Header section --*/
   .header {
-    height: 80vh;
+    height: 90vh;
   }
 
   .logo-box {
@@ -48,7 +48,7 @@
   }
 
   .text-box {
-    top: 38%;
+    top: 45%;
     left: 50%;
     width: 80%;
     margin: auto;
@@ -64,7 +64,7 @@
   .heading-primary-sub {
     font-size: 14px;
     font-weight: 400;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     margin: 1rem 0;
   }
 
