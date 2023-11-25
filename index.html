@@ -9,35 +9,34 @@
   <!-- Favicon -->
   <link rel="shortcut icon" type="ico" href="resources/images/favicon/favicon.ico" />
 
-    <!-- Custom CSS -->
-    <!--Mobile layout-->
-    <link
-      rel="stylesheet" href="./resources/css/mobile/mob.css"/>
+  <!-- Custom CSS -->
+  <!--Mobile layout-->
+  <link rel="stylesheet" href="./resources/css/mobile/mob.css" />
 
-    <!--Other devices -->
-    <link rel="stylesheet" href="./resources/css/app.css" />
-    
+  <!--Other devices -->
+  <link rel="stylesheet" href="./resources/css/app.css" />
+
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./resources/css/app.css" />
   <!--Mobile layout-->
-  <link rel="stylesheet" href="./resources/css/mobile/mob.css"/>
+  <link rel="stylesheet" href="./resources/css/mobile/mob.css" />
 
   <title>Devendra Joshi | Home</title>
 </head>
 
 <body>
 
+  <div class="hamburger-wrapper">
+    <div class="hamburger-menu" onclick="toggleMenu(this)">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    
+  </div>
   <header class="header">
     <!-- Hamburger menu icon -->
-    <div class="hamburger-wrapper">
-      <div class="hamburger-menu" onclick="toggleMenu(this)">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    </div>
-
     <div class="menu">
       <h2>Portfolio</h2>
     </div>
@@ -57,6 +56,16 @@
       <a href="#" class="btn main-btn" id="dl-resume-btn">Download Resume</a>
     </div>
   </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="mySidebar">
+    <div id="sidebar-menu">
+      <a href="#">Blog(Beta)</a>
+      <a href="#">Projects</a>
+      <a href="#">React app</a>
+    </div>
+  </div>
+
 
   <section class="container">
     <!-- Resume -->
