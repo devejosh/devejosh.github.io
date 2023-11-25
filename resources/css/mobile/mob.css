@@ -28,7 +28,10 @@
     left: 86%;
   }
 
-
+.modal-content{
+    width:80%;
+    margin: 40git % auto;
+}
   /*-- Header section --*/
   .header {
     height: 90vh;
