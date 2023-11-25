@@ -28,6 +28,75 @@ a:link {
   margin: 0px auto;
 }
 
+
+/* Menu */
+.menu{
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top:30px;
+  left:20%;
+}
+
+.menu h2
+{
+  letter-spacing:3px;
+}
+
+
+/* Styling for the hamburger icon */
+
+.hamburger-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  box-shadow: 0px 0px 4px #333;
+  position: absolute;
+  top: 30px;
+  left: 80%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+  
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 28px;
+  height: 2px;
+  background-color: #333;
+  /* Adjust color as needed */
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+
+
+/* Styles for the animation when the menu is active */
+.change .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/*-- Header section --*/
 .header {
   height: 95vh;
   background-image: linear-gradient(to bottom, #000428c7, #004e92b2),
@@ -233,37 +302,4 @@ section h2 {
   font-weight: 600;
   padding-right: 1rem;
 }
-
-/* For Mobile device */
-@media only screen and (max-width: 500px) {
-  .container {
-    min-width: 100%;
-    max-width: 100%;
-  }
-
-  .about {
-    padding: 0px 30px;
-  }
-    
-
-  /* -- Footer --*/
-
-  .footer-wrapper .container {
-    display: block;
-    text-align: center;
-  }
-
-  .footer-wrapper .container p {
-    border-right: none;
-  }
-
-  .heading-primary-main {
-    font-size: .9rem;
-  }
-
-  .heading-primary-sub {
-    font-size: 15px;
-  }
-}
-
 
