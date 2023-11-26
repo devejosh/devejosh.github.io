@@ -28,10 +28,11 @@
     left: 86%;
   }
 
-.modal-content{
-    width:80%;
-    margin: 40git % auto;
-}
+  .modal-content {
+    width: 80%;
+    margin: 40% auto;
+  }
+
   /*-- Header section --*/
   .header {
     height: 90vh;
@@ -75,5 +76,10 @@
   .btn:link,
   .btn:visited {
     padding: 0.5rem 2rem;
+  }
+
+  .footer-wrapper .container{
+    display:block;
+    text-align:center;
   }
 }
