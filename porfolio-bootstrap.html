@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bootstrap</title>
+
+    <!-- Bootstap local-->
+
+    <!-- Reboot -->
+    <link rel="stylesheet" href="bootstrap/vendor/bootstrap-5.3.2-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bootstrap/vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="bootstrap/resources/css/app.css">
+</head>
+
+<body>
+    <header class="header position-relative">
+        <div class="position-absolute top-50 start-50 translate-middle text-center col-12 mx-auto text-uppercase headings">
+            <h1 class="heading-primary-main">Devendra Joshi</h1>
+            <p class="heading-primary-sub pb-1">Teach enthusiast, Network geek and an audiophile</p> 
+            <button class="btn btn-outline-warning text-uppercase mt-1">Download Resume</button> 
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- The offcanvas menu trigger button -->
+        <div class="hamburger-wrapper" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu">
+            <div class="hamburger-main">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <!-- Offcanvas menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-menu">
+
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">Devendra Joshi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                this will be the offcanvas menu.
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap local js -->
+    <script src="bootstrap/vendor/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
