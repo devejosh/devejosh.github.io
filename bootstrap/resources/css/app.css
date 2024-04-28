@@ -78,3 +78,26 @@ a:link {
     margin: 5px 0;
     transition: 0.4s;
 }
+
+.card{
+    border-top:none;
+    border-bottom: none;
+}
+
+/* -- EXPERIENCE SECTION --*/
+
+.experience-details img
+{
+    width : 100px;
+    height: 100px;
+}
+
+
+/* -- Footer -- */
+footer
+{
+    background-color: #333;
+    color: white;
+    text-align:center;
+    padding:10px 0px;
+}
