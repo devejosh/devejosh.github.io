@@ -2,53 +2,333 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Bootstrap</title>
+  <!-- Meta tags for character set and viewport configuration -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Bootstrap</title>
 
-    <!-- Bootstap local-->
+  <!-- Bootstrap stylesheets: Reboot, Core CSS, and Custom CSS -->
+  <link rel="stylesheet" href="bootstrap/vendor/bootstrap-5.3.2-dist/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="bootstrap/vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css">
 
-    <!-- Reboot -->
-    <link rel="stylesheet" href="bootstrap/vendor/bootstrap-5.3.2-dist/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="bootstrap/vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <!-- Custome css -->
+  <link rel="stylesheet" href="bootstrap/resources/css/app.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="bootstrap/resources/css/app.css">
 </head>
 
 <body>
-    <header class="header position-relative">
-        <div class="position-absolute top-50 start-50 translate-middle text-center col-12 mx-auto text-uppercase headings">
-            <h1 class="heading-primary-main">Devendra Joshi</h1>
-            <p class="heading-primary-sub pb-1">Teach enthusiast, Network geek and an audiophile</p> 
-            <button class="btn btn-outline-warning text-uppercase mt-1">Download Resume</button> 
-        </div>
-    </header>
-
-    <div class="container">
-        <!-- The offcanvas menu trigger button -->
-        <div class="hamburger-wrapper" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu">
-            <div class="hamburger-main">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
-        <!-- Offcanvas menu -->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-menu">
-
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasLabel">Devendra Joshi</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-
-            <div class="offcanvas-body">
-                this will be the offcanvas menu.
-            </div>
-        </div>
+  <!-- Header section containing personal information -->
+  <header class="header position-relative">
+    <!-- Personal details displayed at the center of the header -->
+    <div class="position-absolute top-50 start-50 translate-middle text-center col-12 mx-auto text-uppercase headings">
+      <h1 class="heading-primary-main">Devendra Joshi</h1>
+      <p class="heading-primary-sub pb-1">Tech enthusiast, Network geek, and an audiophile</p>
+      <button class="btn btn-outline-warning text-uppercase mt-1">Download Resume</button>
     </div>
-    <!-- Bootstrap local js -->
-    <script src="bootstrap/vendor/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  </header>
+  <!--Header section ends here -->
+
+  <!--*******************************************-->
+
+  <!-- Main content container start -->
+  <div class="container">
+
+    <!-- Offcanvas menu trigger button -->
+    <div class="hamburger-wrapper" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu">
+      <div class="hamburger-main">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <!-- Offcanvas menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-menu">
+      <!-- Offcanvas header with title and close button -->
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Devendra Joshi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <!-- Offcanvas body with menu content -->
+      <div class="offcanvas-body">
+        This will be the offcanvas menu.
+      </div>
+    </div>
+
+    <!-- Section displaying languages and frameworks used -->
+    <section>
+      <div class="row">
+        <!-- Heading for the section -->
+        <h3 class="font-weight-bold text-center text-uppercase text-dark pb-3">
+          Languages and Frameworks Used</h3>
+        <!-- Brief description of the technologies used -->
+        <p class="text-center">A brief primer on what I used to write this page with a brief description of why
+          it is used.</p>
+
+        <!-- Bootstrap card showcasing Bootstrap 5 -->
+        <div class="card mb-5 col-sm-6 col-md-4">
+          <!-- Technology icon -->
+          <img class="card-img-top w-50 mx-auto" src="resources/icons/bootstrap.svg" alt="Bootstrap Icon">
+          <!-- Card body with technology details -->
+          <div class="card-body text-center">
+            <h2 class="card-title font-weight-bold">Bootstrap 5</h2>
+            <p class="card-text">Bootstrap 5, the latest front-end framework, delivers a responsive,
+              mobile-first design with a customizable CSS and JavaScript toolkit. It emphasizes
+              simplicity and performance, enabling developers to create modern, visually appealing
+              websites effortlessly.</p>
+          </div>
+        </div>
+
+        <!-- HTML5 card showcasing HTML 5 -->
+        <div class="card mb-5 col-sm-6 col-md-4">
+          <!-- Technology icon -->
+          <img class="card-img-top w-50 mx-auto" src="resources/icons/html5.svg" alt="HTML5 Icon">
+          <!-- Card body with technology details -->
+          <div class="card-body text-center">
+            <h2 class="font-weight-bold">HTML 5</h2>
+            <p class="card-text">HTML5 is the latest version of the markup language for structuring
+              content on the web. It introduces new elements and APIs for improved multimedia support,
+              offline capabilities, and enhanced semantics, providing a modern foundation for web
+              development.</p>
+          </div>
+        </div>
+
+        <!-- CSS3 card showcasing CSS 3 -->
+        <div class="card col-sm-6 col-md-4 mx-auto">
+          <!-- Technology icon -->
+          <img class="card-img-top w-50 mx-auto" src="resources/icons/css3.svg" alt="CSS3 Icon">
+          <!-- Card body with technology details -->
+          <div class="card-body text-center">
+            <h2 class="card-title font-weight-bold">CSS 3</h2>
+            <p class="card-text">CSS3 is the latest iteration of the Cascading Style Sheets language,
+              offering advanced styling options for web pages. It includes features like transitions,
+              animations, and flexible box layouts, allowing developers to create visually engaging
+              and responsive designs, enhancing the presentation of HTML5 content.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section displaying languages and frameworks used ENDS HERE-->
+
+    <!--*************************************-->
+
+    <!-- RESUME SECTION STARTS HERE -->
+    <section>
+      <h4 class="text-center fw-bold mt-5 mb-5">Experience</h4>
+
+      <!--MOVATE EXP START-->
+      <div class="container exp-details">
+        <div class="d-flex">
+          <img class="px-2" src="resources/images/company/csscorp.jpg" alt="Movate logo">
+
+          <div class="company-info">
+            <span class="company-name fw-bold d-block">Movate technologies</span>
+            <!--Designation below (no tag)-->
+            Telecom engineer
+
+            <p class="mt-2 other-info">
+              Full-Time <br>
+              Dec 2022 - Present · 1 Year, 1 month <br>
+              Bengaluru, Karnataka, India
+            </p>
+
+          </div>
+        </div>
+
+        <div class="exp-description">
+          <p class="fw-bold">Started working as a technical support engineer for the 8x8 Project</p>
+          
+          <p class="fw-bold mt-5" style="font-size: 1.2rem;">Responsibilities</p>
+          <p class="fw-bold mb-2">Contact center</p>
+          <ul>
+            <li>Configuring the contact center tenant.</li>
+            <li>Creating and configuring scripts to route calls from channels</li>
+            <li>Setting up call routing through dial plans</li>
+            <li>Roles and user group assignments</li>
+          </ul>
+            <p class="fw-bold mt-4 mb-2">Admin console</p>
+            <ul>
+            <li>User setup and endpoint assignment</li>
+            <li>Device provisioning</li>
+            <li>Device troubleshooting | Provisioning issues | Connectivity issues | Phone configuration issues </li>
+            <li>Account setup and call routing through features like Auto attendants, Hunt/Ring groups and call queues
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Movate section ends here-->
+
+      <!--CAPGEMINI EXP STARTS HERE -->
+      <div class="container exp-details mt-5">
+        <div class="d-flex">
+          <img class="px-2" src="resources/images/company/cg.png" alt="Capgemini logo">
+
+          <div class="company-info">
+            <span class="company-name fw-bold d-block">Capgeminin Engineering</span>
+
+            <!--Designation below (no tag)-->
+            Associate network engineer
+
+            <p class="mt-2 other-info">
+              Full-Time <br>
+              Sep 2021 - December 2022 · 2 Year, 4 month <br>
+              Gurugram, India
+            </p>
+
+          </div>
+        </div>
+
+        <div class="exp-description">
+          <div class="mt-4">
+            <p class="fw-bold">Associate Network Engineer - Webex Calling</p>
+            <p class="other-info">
+              Full-Time <br>
+              Jan 2022 - Present · 11 months <br>
+              Gurugram, Haryana, India</p>
+
+
+
+            <ul>
+              <li>Moved to the Webex calling (Brodcloud) team.</li>
+
+              <li>
+                Supporting enterprise VoIP telephony. - Experienced with setting
+                up and troubleshooting Cisco's brodcloud calling solution on
+                softphone client as well as IP phones.
+              </li>
+
+              <li>
+                Experienced in setting-up enterprise calling features like
+                voicemail, hunt-groups, call queue, auto attendant, voicemail
+                groups.
+              </li>
+
+              <li>
+                Helping customer in IP phone on-boarding, registration and
+                licensing issues with the webex calling (brodcloud).
+              </li>
+
+              <li>
+                Working in coordination with the engineering team to address
+                complex issues with calling services.
+              </li>
+
+              <li>
+                Basic know-how of troubleshooting call quality, disconnections and
+                service issues.
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <p class="fw-bold">Associate network engineer</p>
+
+            <p class="other-info">
+              Full-time <br>
+              May 2021 - January 2022 · 9 months <br>
+              Gurugram, Haryana, India</p>
+
+            <ul>
+              <li>
+                Supporting Cisco's Webex platform (Meetings, Events and Training)
+                - Cisco cloud collaboration team - Audio and Meetings SBR Team.
+              </li>
+
+              <li>
+                Troubleshooting issues with PSTN connections to Cisco's
+                collaboration products - Webex Meetings, events and trainings.
+              </li>
+
+              <li>
+                Worked with PSTN carriers to address telephony issues with call
+                disconnections, IVR and DTMF issues.
+              </li>
+
+              <li>
+                Experienced in troubleshooting QOS issues related to telephony
+                connections to these collaboration platforms (Audio Quality).
+              </li>
+
+              <li>
+                Working in coordination with the engineering team to address
+                complex issues with calling services.
+              </li>
+
+              <li>
+                Experienced in troubleshooting QOS issues related to telephony
+                connections to these collaboration platforms (Audio Quality).
+              </li>
+            </ul>
+          </div>
+
+          <div class="">
+            <p class="fw-bold">Customer Support Engineer</p>
+            <!--Designation (no tags)-->
+            Trainee
+
+            <p class="other-info">
+            Nov 2020 - May 2021 · 7 months <br>
+            Gurugram, Haryana, India
+            </p>
+            
+            <ul>
+              <li>
+                Technical support for Cisco's (Webex) Cloud collaboration
+                platforms ( Meetings / Events / Trainings )
+              </li>
+
+              <li>
+                Helped in setting up Webex meetings / Events / Trainings for
+                end-users and enterprise customers.
+              </li>
+
+              <li>
+                Helped with basic troubleshooting issues related to the platforms
+                mentioned above.
+              </li>
+
+              <li>
+                Helped single / enterprise users with licensing and configuration
+                issues on control hub.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- CAPGEMININ EXP ENDS HERE -->
+
+    </section>
+    <!--RESUME SECTION ENDS HERE-->
+  </div>
+  <!--Main content container end -->
+
+  <!--**********************************************-->
+
+  <!-- Footer start -->
+  <footer>
+
+    <!-- Footer container -->
+    <div class="container">
+      <!--Footer row-->
+      <div class="row">
+        <div class="col-12 text-center">&copy; Devendra Joshi</div>
+        <div class="col-12 text-center">Made with love and passion</div>
+        <div class="col-12 text-center">
+          <a href="https://twitter.com/devejoshx">Twitter</a>
+          <a href="https://github.com/devejosh/">Github</a>
+        </div>
+      </div>
+      <!-- Footer row end div ^-->
+    </div>
+    <!--Footer container end div ^-->
+
+  </footer>
+  <!-- Footer end -->
+
+  <!-- ********************************************* -->
+
+  <!-- Bootstrap local JavaScript -->
+  <script src="bootstrap/vendor/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

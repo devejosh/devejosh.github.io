@@ -80,16 +80,45 @@ a:link {
 }
 
 .card{
-    border-top:none;
-    border-bottom: none;
+    border: none;
 }
+
 
 /* -- EXPERIENCE SECTION --*/
 
-.experience-details img
+.exp-details{
+    font-size: .9rem;
+    color:black;
+}
+.exp-details img
 {
-    width : 100px;
-    height: 100px;
+    width : 150px;
+    height: 150px;
+}
+
+.exp-details .company-name
+{
+    font-size: 1.3rem;
+}
+
+.exp-details .other-info{
+    font-size : .9rem;
+} 
+
+.exp-details .exp-description
+{
+    margin-left:150px;
+}
+
+/* -- MEDIA QUERIES --*/
+/* Extra small devices (phones) */
+@media (max-width: 575.98px) { 
+
+    .exp-details .exp-description
+    {
+        margin-left:0;
+    }
+
 }
 
 
@@ -98,6 +127,5 @@ footer
 {
     background-color: #333;
     color: white;
-    text-align:center;
     padding:10px 0px;
 }
