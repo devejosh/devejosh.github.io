@@ -19,11 +19,15 @@
 <body>
   <!-- Header section containing personal information -->
   <header class="header position-relative">
+    <!--Header title-->
+      <p class="text-uppercase fw-bold fs-4 header-title">portfolio</p>
+    <!--Header title end-->
+    
     <!-- Personal details displayed at the center of the header -->
     <div class="position-absolute top-50 start-50 translate-middle text-center col-12 mx-auto text-uppercase headings">
       <h1 class="heading-primary-main">Devendra Joshi</h1>
       <p class="heading-primary-sub pb-1">Tech enthusiast, Network geek, and an audiophile</p>
-      <button class="btn btn-outline-warning text-uppercase mt-1">Download Resume</button>
+      <button class="btn btn-outline-warning text-uppercase mt-1 main-btn" id="dl-resume-btn">Download Resume</button>
     </div>
   </header>
   <!--Header section ends here -->
@@ -46,7 +50,7 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-menu">
       <!-- Offcanvas header with title and close button -->
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLabel">Devendra Joshi</h5>
+        <h5 class="offcanvas-title" id="offcanvasLabel">Devendra Joshi - Portfolio</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
 
@@ -60,51 +64,42 @@
     <section>
       <div class="row">
         <!-- Heading for the section -->
-        <h3 class="font-weight-bold text-center text-uppercase text-dark pb-3">
-          Languages and Frameworks Used</h3>
+        <h4 class="font-weight-bold text-center text-uppercase pb-1">
+          Languages and Frameworks Used</h4>
         <!-- Brief description of the technologies used -->
-        <p class="text-center">A brief primer on what I used to write this page with a brief description of why
+        <p class="text-center mb-5">A brief primer on what I used to write this page with a brief description of why
           it is used.</p>
 
         <!-- Bootstrap card showcasing Bootstrap 5 -->
         <div class="card mb-5 col-sm-6 col-md-4">
           <!-- Technology icon -->
-          <img class="card-img-top w-50 mx-auto" src="resources/icons/bootstrap.svg" alt="Bootstrap Icon">
+          <img class="card-img-top w-50 mx-auto" src="resources/icons/bootstrap.png" alt="Bootstrap Icon">
           <!-- Card body with technology details -->
           <div class="card-body text-center">
-            <h2 class="card-title font-weight-bold">Bootstrap 5</h2>
-            <p class="card-text">Bootstrap 5, the latest front-end framework, delivers a responsive,
-              mobile-first design with a customizable CSS and JavaScript toolkit. It emphasizes
-              simplicity and performance, enabling developers to create modern, visually appealing
-              websites effortlessly.</p>
+            <h2 class="card-title fw-bold text-uppercase">Bootstrap 5</h2>
+            <p class="card-text fw-bold">Used Bootstrap 5 to prototype the front-end design</p>
           </div>
         </div>
 
         <!-- HTML5 card showcasing HTML 5 -->
         <div class="card mb-5 col-sm-6 col-md-4">
           <!-- Technology icon -->
-          <img class="card-img-top w-50 mx-auto" src="resources/icons/html5.svg" alt="HTML5 Icon">
+          <img class="card-img-top mx-auto" src="resources/icons/html-5.png" alt="HTML5 Icon">
           <!-- Card body with technology details -->
           <div class="card-body text-center">
-            <h2 class="font-weight-bold">HTML 5</h2>
-            <p class="card-text">HTML5 is the latest version of the markup language for structuring
-              content on the web. It introduces new elements and APIs for improved multimedia support,
-              offline capabilities, and enhanced semantics, providing a modern foundation for web
-              development.</p>
+            <h2 class="fw-bold text-uppercase">HTML 5</h2>
+            <p class="card-text fw-bold">The barebones of this page is made in HTML 5</p>
           </div>
         </div>
 
         <!-- CSS3 card showcasing CSS 3 -->
         <div class="card col-sm-6 col-md-4 mx-auto">
           <!-- Technology icon -->
-          <img class="card-img-top w-50 mx-auto" src="resources/icons/css3.svg" alt="CSS3 Icon">
+          <img class="card-img-top w-50 mx-auto" src="resources/icons/css3.png" alt="CSS3 Icon">
           <!-- Card body with technology details -->
           <div class="card-body text-center">
-            <h2 class="card-title font-weight-bold">CSS 3</h2>
-            <p class="card-text">CSS3 is the latest iteration of the Cascading Style Sheets language,
-              offering advanced styling options for web pages. It includes features like transitions,
-              animations, and flexible box layouts, allowing developers to create visually engaging
-              and responsive designs, enhancing the presentation of HTML5 content.</p>
+            <h2 class="card-title fw-bold text-uppercase">CSS 3</h2>
+            <p class="card-text fw-bold">All custom styles on this page are implemeted through CSS3</p>
           </div>
         </div>
       </div>
@@ -329,6 +324,8 @@
 
   <!-- Bootstrap local JavaScript -->
   <script src="bootstrap/vendor/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <!-- Resume download script -->
+  <script src="js/resume-dl.js"></script>
 </body>
 
 </html>
