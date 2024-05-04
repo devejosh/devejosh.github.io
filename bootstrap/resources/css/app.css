@@ -29,6 +29,13 @@ a:link {
     color: #fff;
 }
 
+.header-title
+{
+    position : relative;
+    top:30px;
+    left:20px;
+}
+
 .heading-primary-main {
     font-size: 40px;
     font-weight: 700;
@@ -59,8 +66,10 @@ a:link {
     box-shadow: 0px 0px 2px #333;
     position: fixed;
     top: 30px;
-    left: 80%;
+    left: 85%;
     transform: translate(-50%, 0);
+    background-color:darkgoldenrod;
+    z-index: 1;
 }
 
 .hamburger-menu {
@@ -81,6 +90,41 @@ a:link {
 
 .card{
     border: none;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.7rem 2rem;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  transition: all 0.2s;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  transition: all 0.2s;
+}
+
+.btn-white {
+  background-color: #fff;
+}
+
+.main-btn {
+  margin-top: 1rem;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  background-color: rgba(0, 0, 0, 0.39);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.582);
 }
 /* -- EXPERIENCE SECTION --*/
 
@@ -111,9 +155,24 @@ a:link {
 /* Extra small devices (phones) */
 @media (max-width: 575.98px) { 
 
+    .heading-primary-sub
+    {
+        letter-spacing: 2px;
+    }
+
     .exp-details .exp-description
     {
         margin-left:0;
+    }
+
+    .heading-primary-main{
+        letter-spacing: 2px;
+    }
+
+    /*-- images --*/
+    .card-img-top{
+        width:35% !important;
+        height:auto;
     }
 }
 
