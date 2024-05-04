@@ -82,18 +82,15 @@ a:link {
 .card{
     border: none;
 }
-
-
 /* -- EXPERIENCE SECTION --*/
 
 .exp-details{
     font-size: .9rem;
     color:black;
 }
-.exp-details img
-{
-    width : 150px;
-    height: 150px;
+.exp-details img{
+    width : 200px;
+    height: 200px;
 }
 
 .exp-details .company-name
@@ -118,9 +115,7 @@ a:link {
     {
         margin-left:0;
     }
-
 }
-
 
 /* -- Footer -- */
 footer
