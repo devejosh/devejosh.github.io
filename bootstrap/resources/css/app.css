@@ -1,7 +1,20 @@
 /* -- UTIL/BASE styles --*/
 
+
+/*-- FONTS --*/
+@font-face {
+    font-family:'Roboto';
+    src: url('../../../resources/fonts/Roboto-Regular.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: 'PeterQuincy';
+    src: url("../../../resources/fonts/Peter\ Quincy\ Sans.otf")format('otf');
+}
+
 body {
-    font-family: "Segoe UI", "lato", Tahoma, Geneva, Verdana, sans-serif;
+    font-family:"Segoe UI", "lato", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: #777;
 }
@@ -12,6 +25,11 @@ a:visited,
 a:link {
     text-decoration: none;
     color: #fff;
+}
+
+.heading-font
+{
+    font-size: 'PeterQuincy';
 }
 
 /* -- HEADER AND OFFCANVAS --*/
