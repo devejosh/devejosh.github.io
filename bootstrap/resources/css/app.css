@@ -188,8 +188,14 @@ a:link {
     }
 
     /*-- images --*/
+
+    .exp-details img
+    {
+        width : 150px;
+        height: 150px;
+    }
     .card-img-top{
-        width:35% !important;
+        width:30% !important;
         height:auto;
     }
 }
