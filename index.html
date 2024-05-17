@@ -17,21 +17,60 @@
 </head>
 
 <body>
+  <!-- DIV WRAPPING THE HEADER AND THE LANGUAGE AND FW SECTION STARTS HERE-->
+  <div class="content-section-syling">
   <!-- Header section containing personal information -->
   <header class="header position-relative">
     <!--Header title-->
-      <p class="text-uppercase fw-bold fs-4 header-title">portfolio</p>
+    <p class="text-uppercase fw-bold fs-4 header-title">portfolio</p>
     <!--Header title end-->
-    
+
     <!-- Personal details displayed at the center of the header -->
     <div class="position-absolute top-50 start-50 translate-middle text-center col-12 mx-auto text-uppercase headings">
       <h1 class="heading-primary-main">Devendra Joshi</h1>
       <p class="heading-primary-sub pb-1">Tech enthusiast, Network geek, and an audiophile</p>
       <button class="btn btn-outline-warning text-uppercase mt-1 main-btn" id="dl-resume-btn">Download Resume</button>
     </div>
+
+    
   </header>
   <!--Header section ends here -->
 
+   <!--*******************************************-->
+
+  <!-- Section displaying languages and frameworks used -->
+    <!-- Langusage and framework and description below -->
+    <section id="languages-and-fw-section-wrapper">
+      <h5 class="fw-bold text-center text-uppercase pb-1 heading-font" style="text-decoration: underline;">
+        Languages and Frameworks Used</h5>
+      <!-- Brief description of the technologies used -->
+      <p class="text-center mb-5">A brief primer on what I used to write this page with a brief description of why
+        it is used.</p>
+
+      <div class="container">
+        <div class="row">
+          <div class="icon-logo-container col-md-4">
+            <img class="img-fluid" src="resources/icons/bootstrap.png" alt="Bootstrap logo image">
+            <h4 class="heading-font">Bootstrap</h4>
+            <p>Frontend framework used to write the SPA</p>
+          </div>
+          <div class="icon-logo-container col-md-4">
+            <img class="img-fluid" src="resources/icons/html-5.png" alt="HTML 5 logo image">
+            <h4 class="heading-font">HTML 5</h4>
+            <p>Used for the bare bones of the page</p>
+          </div>
+          <div class="icon-logo-container col-md-4">
+            <img class="img-fluid" src="resources/icons/css3.png" alt="CSS 3 logo image">
+            <h4 class="heading-font">CSS 3</h4>
+            <p>Added style bells and Whistles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section displaying languages and frameworks used ENDS HERE-->
+  </div> 
+  <!-- DIV WRAPPING THE HEADER AND THE LANGUAGE AND FW SECTION ENDS HERE-->
+  
   <!--*******************************************-->
 
   <!-- Main content container start -->
@@ -60,65 +99,22 @@
       </div>
     </div>
 
-    <!-- Section displaying languages and frameworks used -->
-    <section>
-      <div class="row">
-        <!-- Heading for the section -->
-        <h5 class="fw-bold text-center text-uppercase pb-1 heading-font">
-          Languages and Frameworks Used</h5>
-        <!-- Brief description of the technologies used -->
-        <p class="text-center mb-5">A brief primer on what I used to write this page with a brief description of why
-          it is used.</p>
-
-        <!-- Bootstrap card showcasing Bootstrap 5 -->
-        <div class="card mb-5 col-sm-6 col-md-4">
-          <!-- Technology icon -->
-          <img class="card-img-top w-50 mx-auto" src="resources/icons/bootstrap.png" alt="Bootstrap Icon">
-          <!-- Card body with technology details -->
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold heading-font">Bootstrap 5</h5>
-            <p class="card-text fs-6">Used Bootstrap 5 to prototype the front-end design</p>
-          </div>
-        </div>
-
-        <!-- HTML5 card showcasing HTML 5 -->
-        <div class="card mb-5 col-sm-6 col-md-4">
-          <!-- Technology icon -->
-          <img class="card-img-top w-50 mx-auto" src="resources/icons/html-5.png" alt="HTML5 Icon">
-          <!-- Card body with technology details -->
-          <div class="card-body text-center">
-            <h5 class="fw-bold heading-font">HTML 5</h5>
-            <p class="card-text fs-6">The barebones of this page is made in HTML 5</p>
-          </div>
-        </div>
-
-        <!-- CSS3 card showcasing CSS 3 -->
-        <div class="card col-sm-6 col-md-4 mx-auto">
-          <!-- Technology icon -->
-          <img class="card-img-top w-50 mx-auto" src="resources/icons/css3.png" alt="CSS3 Icon">
-          <!-- Card body with technology details -->
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold heading-font">CSS 3</h5>
-            <p class="card-text fs-6">All custom styles on this page are implemeted through CSS3</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section displaying languages and frameworks used ENDS HERE-->
+    
 
     <!--*************************************-->
 
     <!-- RESUME SECTION STARTS HERE -->
-    <section>
-      <h4 class="text-center fw-bold mt-5 mb-5" style="text-decoration: underline;">Experience</h4>
+    <section class="content-section-syling mt-5">
+      <h4 class="text-center fw-bold pt-5 mb-5 heading-font" style="text-decoration: underline;">Experience</h4>
 
       <!--MOVATE EXP START-->
       <div class="container exp-details">
         <div class="d-flex">
-          <img class="px-2 img-fluid .company-details--Image" src="resources/images/company/csscorp.jpg" alt="Movate logo">
+          <img class="px-2 img-fluid .company-details--Image" src="resources/images/company/csscorp.jpg"
+            alt="Movate logo">
 
           <div class="company-info">
-            <span class="company-name fw-bold d-block">Movate technologies</span>
+            <span class="company-name fw-bold d-block heading-font">Movate technologies</span>
             <!--Designation below (no tag)-->
             Telecom engineer
 
@@ -133,7 +129,7 @@
 
         <div class="exp-description">
           <p class="fw-bold">Started working as a technical support engineer for the 8x8 Project</p>
-          
+
           <p class="fw-bold mt-5" style="font-size: 1.2rem;">Responsibilities</p>
           <p class="fw-bold mb-2">Contact center</p>
           <ul>
@@ -142,8 +138,8 @@
             <li>Setting up call routing through dial plans</li>
             <li>Roles and user group assignments</li>
           </ul>
-            <p class="fw-bold mt-4 mb-2">Admin console</p>
-            <ul>
+          <p class="fw-bold mt-4 mb-2">Admin console</p>
+          <ul>
             <li>User setup and endpoint assignment</li>
             <li>Device provisioning</li>
             <li>Device troubleshooting | Provisioning issues | Connectivity issues | Phone configuration issues </li>
@@ -263,10 +259,10 @@
             Trainee
 
             <p class="other-info">
-            Nov 2020 - May 2021 · 7 months <br>
-            Gurugram, Haryana, India
+              Nov 2020 - May 2021 · 7 months <br>
+              Gurugram, Haryana, India
             </p>
-            
+
             <ul>
               <li>
                 Technical support for Cisco's (Webex) Cloud collaboration
