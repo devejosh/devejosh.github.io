@@ -2,6 +2,9 @@
 
 
 /*-- FONTS --*/
+/* -- OPEN SANS --*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @font-face {
     font-family: 'Roboto';
     src: url('../../../resources/fonts/Roboto-Regular.ttf') format('truetype');
@@ -23,7 +26,7 @@
 }
 
 body {
-    font-family:"Libre-baskerville";
+    font-family:"Open Sans";
     font-weight: 400;
     color: #777;
     background-color: #f0f0f0;
@@ -219,7 +222,7 @@ a:link {
 }
 
 .exp-description--subsections{
-    margin-top:2rem;
+    margin-top:4rem;
 }
 
 .exp-description ul li{
@@ -229,13 +232,16 @@ a:link {
     margin : 0;
 }
 
+
 /* -- MEDIA QUERIES --*/
 /* Extra small devices (phones) */
 @media (max-width: 575.98px) { 
+ /* -- EXPERIENCE SECTION --*/
+
 
     .heading-primary-sub
     {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 
     .exp-details .exp-description
@@ -244,7 +250,7 @@ a:link {
     }
 
     .heading-primary-main{
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 
     /*-- images --*/
@@ -252,7 +258,8 @@ a:link {
     .exp-details img
     {
         width : 150px;
-        height: 150px;
+        height: auto;
+        margin :auto;
     }
     .card-img-top{
         width:30% !important;
