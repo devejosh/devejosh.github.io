@@ -218,9 +218,13 @@ a:link {
     margin-left:150px;
 }
 
+.exp-description--subsections{
+    margin-top:2rem;
+}
+
 .exp-description ul li{
-    padding-top:.4rem;
-    padding-bottom:.4rem;
+    padding-top:.2rem;
+    padding-bottom:.2rem;
     font-size:1rem;
     margin : 0;
 }
