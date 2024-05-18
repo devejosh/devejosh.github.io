@@ -216,10 +216,6 @@ a:link {
     font-size : .9rem;
 } 
 
-.exp-details .exp-description
-{
-    margin-left:150px;
-}
 
 .exp-description--subsections{
     margin-top:4rem;
@@ -257,7 +253,7 @@ a:link {
 
     .exp-details img
     {
-        width : 150px;
+        width : 200px;
         height: auto;
         margin :auto;
     }
