@@ -56,6 +56,41 @@ a:link {
 
 /*** GLOBAL STYLES SECTION ENDS ***/
 
+/* -- ANIMATIONS --*/
+
+/* KEYFRAME ANIMATIONS */
+@keyframes movefromleft {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+  
+    80% {
+      opacity: 0.4;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes movefromright {
+    0% {
+      opacity: 0;
+      transform: translateX(500px);
+    }
+  
+    80% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 /* -- HEADER AND OFFCANVAS --*/
 
 .header {
