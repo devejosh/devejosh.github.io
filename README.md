@@ -1,64 +1,34 @@
-Devendra Joshi - Personal Website
+# Devendra Joshi's Portfolio Website
 
-Welcome to the GitHub repository for Devendra Joshi's personal website. This website serves as an online resume and portfolio showcasing my professional experience and skills.
-Table of Contents
+Welcome to the repository for Devendra Joshi's personal portfolio website. This site showcases my professional background, skills, and projects as a Tech Enthusiast, Network Geek, and Audiophile.
 
-    Description
-    Installation
-    Usage
-    Contributing
-    License
+## Table of Contents
 
-Description
+- [General Info](#general-info)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup](#setup)
 
-This website is a simple HTML-based personal portfolio, providing information about my work experience, skills, and contact details. It includes sections such as "About," "Experience," and a footer with links to my social media profiles.
-Installation
 
-No installation is required for this website. You can access it by opening the HTML file in a web browser. Here are the steps:
+## General Info
 
-    Clone this repository to your local machine using Git:
+This website serves as a digital resume and a personal portfolio. It includes details about my professional experiences, the technologies I use, and my personal projects.
 
-bash
+## Technologies Used
 
-git clone https://github.com/devejosh/devejosh.github.io.git
+- HTML5
+- CSS3
+- Bootstrap 5.3.2
 
-    Navigate to the project directory:
+## Features
 
-bash
+A few of the things you can find on this website:
 
-cd your-repo-name
+- Professional experience and timeline
+- List of technologies and frameworks I have used
+- Downloadable resume
+- Contact information and links to social media profiles
 
-    Open the index.html file in your preferred web browser.
+## Setup
 
-Usage
-
-You can use this website to learn more about my professional background and skills. Feel free to explore the different sections to get a better understanding of my experience and expertise.
-Contributing
-
-If you'd like to contribute to this project, please follow these steps:
-
-    Fork the repository.
-
-    Create a new branch for your feature or bug fix:
-
-bash
-
-git checkout -b feature/your-feature-name
-
-    Make your changes and commit them:
-
-bash
-
-git commit -m 'Add your feature or fix'
-
-    Push your changes to your fork:
-
-bash
-
-git push origin feature/your-feature-name
-
-    Create a pull request to the main repository.
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+To run this project locally, simply clone the repository and open `index.html` in your web browser.
