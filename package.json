@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "tailwindcss": "^3.4.3"
+  },
+
+  "scripts": {
+    "build": "tailwindcss -i ./tailwind/resources/css/base.css -o ./tailwind/resources/css/app.css",
+    "watch": "tailwindcss -i ./tailwind/resources/css/base.css -o ./tailwind/resources/css/app.css --watch"
   }
 }
