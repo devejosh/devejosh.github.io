@@ -13,14 +13,15 @@
 </head>
 
 <body class="font-serif">
-  <div id="main-wrapper" class="container md:container md:mx-auto">
+  <div id="main-wrapper" class="container md:container mx-auto">
   <!-- DIV WRAPPING THE HEADER AND THE LANGUAGE AND FW SECTION STARTS HERE-->
   <section>
     <!-- Header section containing personal information -->
     <header class="header flex flex-col text-color-white">
       <!--Header title-->
-      <h1 class="text-center text-4xl uppercase mt-6">portfolio</h1>
-      <ul class="flex justify-center gap-5 py-3 my-4 uppercase bg-gray-700 drop-shadow-xl rounded-md w-2/6 mx-auto">
+      <h1 class="text-center text-4xl uppercase mt-9 md:mt-6">portfolio</h1>
+      
+      <ul class="flex justify-center gap-5 py-3 my-4 uppercase bg-gray-700 drop-shadow-xl rounded-md w-2/6 mx-auto max-xl:hidden">
         <li><a href="#">Home</a></li>
         <li><a href="#">technology used</a></li>
         <li><a href="#">Experince</a></li>
@@ -29,18 +30,18 @@
       <!--Header title end-->
 
       <!-- Personal details displayed at the center of the header -->
-      <div class="w-4/5 mx-auto uppercase flex justify-center my-auto space-x-4">
+      <div class="w-4/5 mx-auto uppercase flex justify-center my-auto flex-col md:flex-row space-x-4">
 
-        <img class="rounded w-48 rounded-full border-4 border-gray-300" src="resources/images/devendra.jpg" alt="Devendra's image">
+        <img class="rounded w-48 rounded-full border-4 max-md:mx-auto border-gray-300" src="resources/images/devendra.jpg" alt="Devendra's image">
         
-        <div>
-          <span class="heading-primary-main align-baseline">Devendra Joshi</span>
-        <p class="heading-primary-sub pb-1">Tech enthusiast, Network geek, and an audiophile</p>
-        <div class="flex space-x-4">
+        <div class="flex flex-col">
+          <p class="heading-primary-main max-md:text-center align-baseline">Devendra Joshi</p>
+        <p class="heading-primary-sub pb-1 max-md:text-center">Tech enthusiast, Network geek, and an audiophile</p>
+        <div class="flex space-x-4 max-md:justify-center">
         <img class="w-7" src="resources/icons/github.png" alt="github icon">
         <img class="w-7" src="resources/icons/twitter.png" alt="Twitter icon">
         </div>
-        <button class="btn btn-outline-warning text-uppercase mt-1 main-btn" id="dl-resume-btn">View Resume</button>
+        <button class="p-2 mt-1 main-btn max-md:mx-auto max-md:p-4" id="dl-resume-btn">View Resume</button>
         </div>
         
       </div>
