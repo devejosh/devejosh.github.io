@@ -12,24 +12,38 @@
 
 </head>
 
-<body>
-  <p class="text-3xl bg-red-400">Hello from tailwind. Hope this brings about a big heading</p>
+<body class="font-serif">
+  <div id="main-wrapper" class="container md:container md:mx-auto">
   <!-- DIV WRAPPING THE HEADER AND THE LANGUAGE AND FW SECTION STARTS HERE-->
-  <div class="content-section-syling container mx-auto md:container md:mx-auto">
+  <section>
     <!-- Header section containing personal information -->
-    <header class="header">
+    <header class="header flex flex-col text-color-white">
       <!--Header title-->
-      <p class="text-uppercase fw-bold fs-4 header-title">portfolio</p>
+      <h1 class="text-center text-4xl uppercase mt-6">portfolio</h1>
+      <ul class="flex justify-center gap-5 py-3 my-4 uppercase bg-gray-700 drop-shadow-xl rounded-md w-2/6 mx-auto">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">technology used</a></li>
+        <li><a href="#">Experince</a></li>
+      </ul>
+
       <!--Header title end-->
 
       <!-- Personal details displayed at the center of the header -->
-      <div
-        class="position-absolute top-50 start-50 translate-middle text-center col-12 mx-auto text-uppercase headings">
-        <h1 class="heading-primary-main">Devendra Joshi</h1>
-        <p class="heading-primary-sub pb-1">Tech enthusiast, Network geek, and an audiophile</p>
-        <button class="btn btn-outline-warning text-uppercase mt-1 main-btn" id="dl-resume-btn">Download Resume</button>
-      </div>
+      <div class="w-4/5 mx-auto uppercase flex justify-center my-auto space-x-4">
 
+        <img class="rounded w-48 rounded-full border-4 border-gray-300" src="resources/images/devendra.jpg" alt="Devendra's image">
+        
+        <div>
+          <span class="heading-primary-main align-baseline">Devendra Joshi</span>
+        <p class="heading-primary-sub pb-1">Tech enthusiast, Network geek, and an audiophile</p>
+        <div class="flex space-x-4">
+        <img class="w-7" src="resources/icons/github.png" alt="github icon">
+        <img class="w-7" src="resources/icons/twitter.png" alt="Twitter icon">
+        </div>
+        <button class="btn btn-outline-warning text-uppercase mt-1 main-btn" id="dl-resume-btn">View Resume</button>
+        </div>
+        
+      </div>
 
     </header>
     <!--Header section ends here -->
@@ -66,13 +80,13 @@
       </div>
     </section>
     <!-- Section displaying languages and frameworks used ENDS HERE-->
-  </div>
-  <!-- DIV WRAPPING THE HEADER AND THE LANGUAGE AND FW SECTION ENDS HERE-->
+  </section>
+  <!-- SECTION WRAPPING THE HEADER AND THE LANGUAGE AND FW SECTION ENDS HERE-->
 
   <!--*******************************************-->
 
   <!-- Main content container start -->
-  <div class="container">
+  <div class="container md:container md:mx-auto">
 
     <!-- Offcanvas menu trigger button -->
     <div class="hamburger-wrapper" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu">
@@ -275,29 +289,19 @@
   <!--**********************************************-->
 
   <!-- Footer start -->
-  <footer>
-
-    <!-- Footer container -->
-    <div class="container">
-      <!--Footer row-->
-      <div class="row">
-        <div class="col-12 col-md-4 text-center">&copy; Devendra Joshi</div>
-        <div class="col-12 col-md-4 text-center">Made with love and passion</div>
-        <div class="col-12 col-md-4 text-center">
+  <footer class=" bg-slate-900">
+        &copy; Devendra Joshi
+        Made with love and passion
           <a href="https://twitter.com/devejoshx" class="link-success">Twitter</a>
           <a href="https://github.com/devejosh/" class="link-success">Github</a>
-        </div>
-      </div>
-      <!-- Footer row end div ^-->
-    </div>
-    <!--Footer container end div ^-->
-
-  </footer>
+          <a href="#">Credits</a>
+    </footer>
   <!-- Footer end -->
 
   <!-- ********************************************* -->
   <!-- Resume download script -->
   <script src="js/resume-dl.js"></script>
+</div>
 </body>
 
 </html>
