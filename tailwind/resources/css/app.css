@@ -593,11 +593,6 @@ video {
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -631,16 +626,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-9 {
-  margin-top: 2.25rem;
+.ml-auto {
+  margin-left: auto;
 }
 
 .flex {
   display: flex;
-}
-
-.w-2\/6 {
-  width: 33.333333%;
 }
 
 .w-4\/5 {
@@ -659,18 +650,44 @@ video {
   flex-direction: column;
 }
 
-.justify-center {
-  justify-content: center;
+.justify-start {
+  justify-content: flex-start;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.divide-x > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
+.divide-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(0px * var(--tw-divide-x-reverse));
+  border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
+.divide-gray-800 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-divide-opacity));
+}
+
+.divide-gray-400 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-divide-opacity));
 }
 
 .rounded {
@@ -681,12 +698,17 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .border-4 {
   border-width: 4px;
+}
+
+.border-x {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-gray-300 {
@@ -694,9 +716,19 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.bg-gray-700 {
+.border-slate-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.border-b-slate-200 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.bg-slate-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .bg-slate-900 {
@@ -704,13 +736,33 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-1 {
@@ -737,63 +789,31 @@ video {
   vertical-align: middle;
 }
 
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
 }
 
-.underline {
-  text-decoration-line: underline;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.drop-shadow-xl {
-  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.underline {
+  text-decoration-line: underline;
 }
 
 /*-- FONTS --*/
 
 /*** GLOBAL STYLES SECTION STARTS ***/
 
-body{
-  background-color:#f0f0f5;
-  background: linear-gradient(135deg, #f0f0f5, #e0e0eb);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.container{
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-  background : #fff
-}
-
 /*** GLOBAL STYLES SECTION ENDS ***/
 
-/* -- HEADER AND OFFCANVAS --*/
-
-.header {
-  height : 95vh;
-  background-image: linear-gradient(to bottom, #000428c7, #004e92b2),
-        url(../../../resources/images/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-}
-
-.text-color-white{
-  color : #fff;
+#nav-main{
+  box-shadow: 0px 1px 2px -2px rgba(0, 0, 0, 0.75);
 }
 
 .heading-primary-main {
@@ -979,8 +999,6 @@ body{
 
 footer
 {
-  color: white;
-  padding : 20px;
 }
 
 @media (min-width: 768px) {
@@ -1019,12 +1037,6 @@ footer
   }
 }
 
-@media not all and (min-width: 1280px) {
-  .max-xl\:hidden {
-    display: none;
-  }
-}
-
 @media not all and (min-width: 768px) {
   .max-md\:mx-auto {
     margin-left: auto;
@@ -1048,10 +1060,6 @@ footer
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .md\:mt-6 {
-    margin-top: 1.5rem;
   }
 
   .md\:flex-row {
