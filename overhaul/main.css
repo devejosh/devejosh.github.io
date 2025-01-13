@@ -1,0 +1,208 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Color Palette using CSS Variables */
+:root {
+  --bg-color: #F5F7FA; /* Soft off-white background */
+  --accent-color: #e9f5f1; /* Mint green */
+  --primary-text-color: #333;
+  --secondary-text-color: #7a7a7a;
+  --dark-footer-bg: #333; /* Dark background for footer */
+  --footer-text-color: #f5f5f5;
+  --border-radius: 8px; /* Global border radius */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f1f1f1, #e9f5f1);
+  width: 100%;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  color: var(--primary-text-color);
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.hero-content .subtitle {
+  font-size: 1.75rem;
+  color: var(--secondary-text-color);
+  font-weight: 300;
+}
+
+
+/* About Section */
+#about {
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text {
+  max-width: 600px;
+  padding-right: 2rem; /* Padding to prevent text from touching the edges */
+}
+
+.text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-text-color);
+}
+
+.text p {
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+}
+
+.portrait {
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 8px 25px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.portrait:hover {
+  transform: scale(1.1);
+}
+
+/* Projects Section */
+#projects {
+  background-color: var(--accent-color);
+  padding: 5rem 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+#projects h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-text-color);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+.project-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: var(--primary-text-color);
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to top, #333, #555); /* Gradient effect for footer */
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  color: var(--footer-text-color);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 18px var(--shadow-color);
+  background-color: #e9f5f1; /* Soft mint background on hover */
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  margin: 8px auto;
+}
