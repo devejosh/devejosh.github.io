@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #F5F7FA; /* Soft off-white */
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -16,6 +16,19 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
+}
+
+/* Color Palette using CSS Variables */
+:root {
+  --bg-color: #F5F7FA; /* Soft off-white background */
+  --accent-color: #e9f5f1; /* Mint green */
+  --primary-text-color: #333;
+  --secondary-text-color: #7a7a7a;
+  --dark-footer-bg: #333; /* Dark background for footer */
+  --footer-text-color: #f5f5f5;
+  --border-radius: 8px; /* Global border radius */
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section */
@@ -24,7 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f1f1f1;
+  background: linear-gradient(to bottom, #f1f1f1, #e9f5f1);
   width: 100%;
 }
 
@@ -36,16 +49,17 @@ body {
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
-  color: #2d2d2d;
+  color: var(--primary-text-color);
   letter-spacing: 2px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .hero-content .subtitle {
   font-size: 1.75rem;
-  color: #7a7a7a;
+  color: var(--secondary-text-color);
   font-weight: 300;
 }
+
 
 /* About Section */
 #about {
@@ -67,27 +81,27 @@ body {
 
 .text {
   max-width: 600px;
-  font-family: 'Poppins', sans-serif;
+  padding-right: 2rem; /* Padding to prevent text from touching the edges */
 }
 
 .text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #2d2d2d;
+  color: var(--primary-text-color);
 }
 
 .text p {
   font-size: 1.2rem;
-  color: #6b6b6b;
+  color: var(--secondary-text-color);
 }
 
 .portrait {
-  width: 180px;
+  width: 200px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 25px var(--shadow-color);
   transition: transform 0.3s ease;
 }
 
@@ -97,7 +111,7 @@ body {
 
 /* Projects Section */
 #projects {
-  background-color: #e9f5f1; /* Mint green */
+  background-color: var(--accent-color);
   padding: 5rem 2rem;
   text-align: center;
   width: 100%;
@@ -107,7 +121,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #2d2d2d;
+  color: var(--primary-text-color);
 }
 
 .projects-container {
@@ -121,89 +135,74 @@ body {
 
 .project-card {
   background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px var(--shadow-color);
 }
 
 .project-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.75rem;
-  color: #4a4a4a;
+  color: var(--primary-text-color);
   margin-bottom: 1rem;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #6b6b6b;
+  color: var(--secondary-text-color);
 }
 
 /* Footer */
 footer {
-  background-color: #333; /* Dark charcoal */
-  color: #fff; /* Light text for contrast */
-  padding: 1.5rem 1.5rem;
+  background: linear-gradient(to top, #333, #555); /* Gradient effect for footer */
+  padding: 2rem;
   text-align: center;
-  position: relative;
-  bottom: 0;
   width: 100%;
-  box-shadow: none; /* Removed the shadow */
-  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .footer-content p {
   font-size: 1rem;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
+  color: var(--footer-text-color);
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
+  gap: 1.25rem;
+  margin-top: 1rem;
 }
 
-/* Footer Icon Hover */
 .social-links a {
-  position: relative;
-  width: 48px;
-  height: 48px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
   border-radius: 50%;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+  box-shadow: 0px 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .social-links a:hover {
-  transform: translateY(-4px); /* Light lift on hover */
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12); /* Slightly stronger shadow */
-  border: 2px solid #ffffff; /* White border on hover */
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 18px var(--shadow-color);
+  background-color: #e9f5f1; /* Soft mint background on hover */
 }
 
-.social-links i {
-  font-size: 1.5rem; /* Adjust icon size */
-  color: #fff;
-  transition: transform 0.2s ease;
-}
-
-.social-links a:hover i {
-  transform: scale(1.1); /* Slight scaling effect on hover */
-}
-
-
-/* Mobile-friendly */
-@media (max-width: 768px) {
-  .footer-content {
-    gap: 1.5rem;
-  }
+.social-links img {
+  width: 24px;
+  height: 24px;
+  margin: 8px auto;
 }

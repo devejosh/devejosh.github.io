@@ -1,0 +1,39 @@
+/* Mobile-Specific Styles */
+
+/* Adjustments to Hero Section for Mobile */
+#hero {
+    height: 80vh; /* Keeps the hero section proportionate on mobile */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem; /* Slightly reduced font size */
+}
+
+.hero-content .subtitle {
+    font-size: 1.5rem; /* Adjust subtitle size for mobile */
+}
+
+/* Mobile-Specific About Section */
+.about-content {
+    flex-direction: column; /* Stack content vertically on mobile */
+    gap: 2rem; /* Space between text and portrait */
+}
+
+.portrait {
+    width: 150px; /* Reduced image size for mobile */
+    height: 150px;
+}
+
+/* Mobile-Specific Projects Section */
+.projects-container {
+    grid-template-columns: 1fr; /* One project per row on mobile */
+}
+
+.project-card {
+    padding: 1.5rem; /* Reduced padding for mobile */
+}
+
+/* Mobile-Specific Footer */
+.footer-content {
+    gap: 1.5rem; /* Reduced gap for mobile */
+}
