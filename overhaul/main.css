@@ -175,34 +175,39 @@ footer {
 
 .footer-content p {
   font-size: 1rem;
-  color: var(--footer-text-color);
+  color: var(--footer-text-color, #fff); /* Default to white if variable not set */
 }
 
 .social-links {
   display: flex;
   justify-content: center;
   gap: 1.25rem;
-  margin-top: 1rem;
 }
 
 .social-links a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Slightly larger for better visibility */
+  height: 50px;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0px 4px 12px var(--shadow-color);
+  box-shadow: 0px 4px 12px var(--shadow-color, rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .social-links a:hover {
   transform: translateY(-3px);
-  box-shadow: 0px 6px 18px var(--shadow-color);
+  box-shadow: 0px 6px 18px var(--shadow-color, rgba(0, 0, 0, 0.3));
   background-color: #e9f5f1; /* Soft mint background on hover */
 }
 
-.social-links img {
-  width: 24px;
-  height: 24px;
-  margin: 8px auto;
+.social-links a i {
+  font-size: 24px;
+  color: #333; /* Icon color */
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover i {
+  color: #0073e6; /* Highlight color for icons on hover */
 }
