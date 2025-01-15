@@ -186,6 +186,137 @@ nav .nav-links li a:link, nav .nav-links li a:visited{
   line-height:1.7;
 }
 
+
+/* Experience section */
+.experience-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--bg-color);
+}
+
+ .experience-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-text-color);
+  text-align: center;
+} 
+
+
+
+.experience-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.experience-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  margin-right: 20px;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.job-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--primary-text-color);
+  margin-bottom: 5px;
+}
+
+.company-name {
+  font-size: 1.25rem;;
+  color: var(--secondary-text-color);
+  margin-bottom: 5px;
+}
+
+.job-dates {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.job-description {
+  line-height:1.7;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.skills {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+}
+
+.skills svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.organization {
+  margin-bottom: 30px;
+}
+
+.organization > .organization-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.organization-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  margin-right: 20px;
+}
+
+.organization-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.organization-sub-items {
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+      padding: 20px;
+  }
+
+  .experience-title {
+      font-size: 1.5rem;
+  }
+
+  .job-title {
+      font-size: 1.3rem;
+  }
+}
+
+
 /* Projects Section */
 #projects {
   background-color: var(--accent-color);
