@@ -3,10 +3,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe-UI', Roboto, Helvetica, Arial, sans-serif; /* Adding multiple fonts for fallback  */
   background-color: var(--bg-color);
   color: var(--primary-text-color);
   line-height: 1.6;
@@ -22,13 +25,19 @@ body {
 /* Color Palette using CSS Variables */
 :root {
   --bg-color: #F5F7FA; /* Soft off-white background */
-  --accent-color: #e9f5f1; /* Mint green */
-  --primary-text-color: #333;
-  --secondary-text-color: #7a7a7a;
+  --accent-color: #d6f2e6; /* Mint green */
+  --primary-text-color: #222;
+  --secondary-text-color: #555;
   --dark-footer-bg: #333; /* Dark background for footer */
   --footer-text-color: #f5f5f5;
   --border-radius: 8px; /* Global border radius */
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-text-color:#d4af37;
+  --nav-link-hover:#d4af37;
+  --nav-link-color:#2c2c2c;
+  --nav-background:#ffffff;
+  --hero-gradient-start:#f0f0f0;
+  --hero-gradient-end :#e9f5f1;
 }
 /* Header Styling */
 header {
@@ -41,12 +50,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding :2rem;
+  padding :1.8rem;
 }
 
 nav .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 2.7rem;
   color: var(--primary-text-color);
   margin: 0;
 }
@@ -56,20 +65,30 @@ nav .nav-links {
   list-style-type: none;
   flex-grow : 1;
   justify-content:center;
-  gap: 2rem;
+  gap: 3rem;
   margin: 0;
 }
 
 nav .nav-links li a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-  
+  font-weight: 500;
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  color : var(--nav-link-color);
+  transition: color 0.3s ease,transfrom 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom:0.6rem;
+  letter-spacing: 0.03rem;
+  position: relative;
 }
 
 nav .nav-links li a:hover {
-  color: var(--accent-color);
+  color: var(--nav-link-color);
+  border-bottom:3px solid var(--nav-link-hover);
+  
+}
+
+nav .nav-links li a:link, nav .nav-links li a:visited{
+  color : var(--nav-link-color)
 }
 
 /* Hamburger Menu */
@@ -109,7 +128,8 @@ nav .nav-links li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0; /* You can change this to fit your design */
+  background : linear-gradient(135deg, var(--bg-color) 0%, var(--hero-gradient-start) 60%, var(--hero-gradient-end) 100%);
+  padding : 0 1rem;
   text-align: center;
   padding: 0 1rem;
 }
@@ -136,6 +156,7 @@ nav .nav-links li a:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+  text-align: left;
 }
 
 .about-content {
@@ -154,7 +175,7 @@ nav .nav-links li a:hover {
 
 .text h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
   color: var(--primary-text-color);
 }
@@ -162,12 +183,7 @@ nav .nav-links li a:hover {
 .text p {
   font-size: 1.2rem;
   color: var(--secondary-text-color);
-}
-
-
-
-.portrait:hover {
-  transform: scale(1.1);
+  line-height:1.7;
 }
 
 /* Projects Section */
@@ -180,7 +196,7 @@ nav .nav-links li a:hover {
 
 #projects h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   color: var(--primary-text-color);
 }
@@ -218,6 +234,8 @@ nav .nav-links li a:hover {
   font-size: 1rem;
   color: var(--secondary-text-color);
 }
+
+
 
 /* Footer */
 footer {
