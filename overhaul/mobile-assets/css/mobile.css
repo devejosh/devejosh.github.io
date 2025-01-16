@@ -111,6 +111,8 @@ nav .nav-links {
   text-align: center; /* Center-align text for mobile */
 }
 
+/* mobile specific modifications for experience section  */
+
 .job-title, .company-name, .job-dates, .job-description {
   font-size: 1rem; /* Adjust font sizes */
   margin-bottom: 10px;
