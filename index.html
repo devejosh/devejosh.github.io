@@ -2,327 +2,153 @@
 <html lang="en">
 
 <head>
-  <!-- Meta tags for character set and viewport configuration -->
-  <meta charset="UTF-8">
-  <!-- Icon -->
-  <link rel="icon" href='resources/images/favicon/site-logo.svg' type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Devendra Joshi | Home</title>
+    <!-- All meta-tags  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Your Name - Network Engineer & IT Professional.">
+    <meta name="keywords" content="Network Engineer, IT Professional, Portfolio, Technology, Projects">
+    <meta property="og:title" content="Devendra Joshi | Portfolio">
+    <meta property="og:description" content="A network engineer with a passion for technology and innovation.">
+    <meta property="og:url" content="https://devejosh.github.io">
 
-  <!-- Bootstrap stylesheets: Reboot, Core CSS, and Custom CSS -->
-  <link rel="stylesheet" href="bootstrap/vendor/bootstrap-5.3.2-dist/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="bootstrap/vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- page title and custom font import -->
+    <title>Devendra Joshi | Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Custome css -->
-  <link rel="stylesheet" href="bootstrap/resources/css/app.css">
 
+    <!-- Main css file -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Mobile-Specific CSS File (only loaded on small screens) -->
+    <link rel="stylesheet" href="mobile-assets/css/mobile.css" media="(max-width: 768px)">
 </head>
 
 <body>
-  <!-- DIV WRAPPING THE HEADER AND THE LANGUAGE AND FW SECTION STARTS HERE-->
-  <div class="content-section-syling">
-    <!-- Header section containing personal information -->
-    <header class="header position-relative">
-      <!--Header title-->
-      <p class="text-uppercase fw-bold fs-4 header-title">portfolio</p>
-      <!--Header title end-->
+    <header>
+        <!-- navigation -->
+        <nav>
+            <div class="hamburger" id="hamburger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
 
-      <!-- Personal details displayed at the center of the header -->
-      <div
-        class="position-absolute top-50 start-50 translate-middle text-center col-12 mx-auto text-uppercase headings">
-        <h1 class="heading-primary-main">Devendra Joshi</h1>
-        <p class="heading-primary-sub pb-1">Tech enthusiast, Network geek, and an audiophile</p>
-        <button class="btn btn-outline-warning text-uppercase mt-1 main-btn" id="dl-resume-btn">Download Resume</button>
-      </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#"></a>Archived design</li>
+            </ul>
+        </nav>
 
-
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Devendra Joshi</h1>
+                <p class="subtitle">Network Engineer | IT Professional</p>
+            </div>
+        </section>
     </header>
-    <!--Header section ends here -->
 
-    <!--*******************************************-->
-
-    <!-- Section displaying languages and frameworks used -->
-    <!-- Langusage and framework and description below -->
-    <section id="languages-and-fw-section-wrapper">
-      <h5 class="fw-bold text-center text-uppercase pb-1 heading-font" style="text-decoration: underline;">
-        Languages and Frameworks Used</h5>
-      <!-- Brief description of the technologies used -->
-      <p class="text-center mb-5">A brief primer on what I used to write this page with a brief description of why
-        it is used.</p>
-
-      <div class="container">
-        <div class="row">
-          <div class="icon-logo-container col-md-4">
-            <img class="img-fluid" src="resources/images/tech/bootstrap.svg" alt="Bootstrap logo image">
-            <h4 class="heading-font">Bootstrap</h4>
-            <p>Frontend framework used to write the SPA</p>
-          </div>
-          <div class="icon-logo-container col-md-4">
-            <img class="img-fluid" src="resources/images/tech/html.png" alt="HTML 5 logo image">
-            <h4 class="heading-font">HTML 5</h4>
-            <p>Used for the bare bones of the page</p>
-          </div>
-          <div class="icon-logo-container col-md-4">
-            <img class="img-fluid" src="resources/icons/css3.png" alt="CSS 3 logo image">
-            <h4 class="heading-font">CSS 3</h4>
-            <p>Added style bells and Whistles.</p>
-          </div>
+    <!-- About Section -->
+    <section id="about" class="seContactction">
+        <div class="about-content">
+            <div class="text">
+                <h2>About Me</h2>
+                <p>I am a Network Engineer with an eye for perfection, committed to optimizing systems and ensuring
+                    flawless connectivity. My work is driven by a love for technology and a dedication to excellence in
+                    every project.</p>
+            </div>
         </div>
-      </div>
     </section>
-    <!-- Section displaying languages and frameworks used ENDS HERE-->
-  </div>
-  <!-- DIV WRAPPING THE HEADER AND THE LANGUAGE AND FW SECTION ENDS HERE-->
 
-  <!--*******************************************-->
+    <!-- experience section -->
+    <div class="experience-container">
+        <div class="experience-title">Experience</div>
 
-  <!-- Main content container start -->
-  <div class="container">
-
-    <!-- Offcanvas menu trigger button -->
-    <div class="hamburger-wrapper" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu">
-      <div class="hamburger-main">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    </div>
-
-    <!-- Offcanvas menu -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-menu">
-      <!-- Offcanvas header with title and close button -->
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLabel">Devendra Joshi - Portfolio</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-
-      <!-- Offcanvas body with menu content -->
-      <div class="offcanvas-body">
-        <a class="text-center text-primary" href="index.html">Non Bootstrap</a>
-      </div>
-    </div>
-
-
-
-    <!--*************************************-->
-
-    <!-- RESUME SECTION STARTS HERE -->
-    <section class="content-section-syling mt-3">
-      <h4 class="text-center fw-bold pt-5 mb-5 heading-font">Experience</h4>
-
-      <!--MOVATE EXP START-->
-      <div class="container exp-details">
-        <div class="row">
-          <div class="col-md-4 d-flex justify-content-end">
-            <img class="img-fluid d-block d-md-flex" src="resources/images/company/movate.jpg" alt="Movate logo">
-          </div>
-          <div class="col-md-8">
-            <div class="company-info text-center text-md-start align-middle">
-              <span class="company-name fw-bold d-block heading-font">Movate technologies</span>
-              <!--Designation below (no tag)-->
-              <p class="mt-2 other-info fw-bold">
-                Telecom engineer <br>
-                Full-Time <br>
-                Dec 2022 - Dec 2024 · 2 Years, 1 month <br>
-                Bengaluru, Karnataka, India
-              </p>
+        <div class="organization">
+            <div class="organization-header">
+                <div class="organization-icon">ME</div>
+                <div class="organization-title">Movate Engineering</div>
             </div>
-
-            <div class="exp-description">
-              <p class="text-center text-md-start mt-4">Started working as a technical support engineer for the 8x8
-                Project</p>
-
-              <p class="fw-bold mt-4 text-center">Responsibilities</p>
-              <p class="fw-bold mb-2">Contact center</p>
-              <ul>
-                <li>Configuring the contact center tenant.</li>
-                <li>Creating and configuring scripts to route calls from channels</li>
-                <li>Setting up call routing through dial plans</li>
-                <li>Roles and user group assignments</li>
-              </ul>
-              <p class="fw-bold mt-4 mb-2">Admin console</p>
-              <ul>
-                <li>User setup and endpoint assignment</li>
-                <li>Device provisioning</li>
-                <li>Device troubleshooting | Provisioning issues | Connectivity issues | Phone configuration issues
-                </li>
-                <li>Account setup and call routing through features like Auto attendants, Hunt/Ring groups and call
-                  queues
-                </li>
-              </ul>
+            <div class="organization-sub-items">
+                <div class="experience-item">
+                    <div class="experience-icon">1</div>
+                    <div class="experience-details">
+                        <div class="job-title">Telecom Engineer</div>
+                        <div class="job-dates">Dec 2022 - Dec 2024 • 2 yrs 1 mo</div>
+                        <div class="job-description">Started working as a technical support engineer for the 8x8
+                            Project. Responsibilities included configuring contact center tenants, creating scripts for
+                            call routing, and troubleshooting device and connectivity issues.</div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!--Movate section ends here-->
 
-      <!--CAPGEMINI EXP STARTS HERE -->
-      <div class="container exp-details mt-5">
-        <div class="row">
-          <div class="col-sm-4 d-flex justify-content-end">
-            <img class="img-fluid" src="resources/images/company/cg.png" alt="Capgemini logo">
-          </div>
-          <div class="col-md-8">
-            <div class="d-md-flex d-block">
-              <div class="company-info text-center text-md-left">
-                <span class="company-name fw-bold d-block d-md-flex heading-font">Capgeminin Engineering</span>
-                <p class="mt-2 other-info text-md-start">
-                  Associate network engineer <br>
-                  Full-Time <br>
-                  Sep 2021 - December 2022 · 2 Year, 4 month <br>
-                  Gurugram, India
-                </p>
-              </div>
+        <div class="organization">
+            <div class="organization-header">
+                <div class="organization-icon">CE</div>
+                <div class="organization-title">Capgemini Engineering</div>
             </div>
-            <div class="exp-description">
-              <div class="mt-4 exp-description">
-                <p class="fw-bold heading-font text-center text-md-start">Associate Network Engineer - Webex Calling</p>
-                <p class="other-info fw-bold text-center text-md-start">
-                  Full-Time <br>
-                  Jan 2022 - December 2022 · 11 months <br>
-                  Gurugram, Haryana, India</p>
-                <ul>
-                  <li>Moved to the Webex calling (Brodcloud) team.</li>
-  
-                  <li>
-                    Supporting enterprise VoIP telephony. - Experienced with setting
-                    up and troubleshooting Cisco's brodcloud calling solution on
-                    softphone client as well as IP phones.
-                  </li>
-  
-                  <li>
-                    Experienced in setting-up enterprise calling features like
-                    voicemail, hunt-groups, call queue, auto attendant, voicemail
-                    groups.
-                  </li>
-  
-                  <li>
-                    Helping customer in IP phone on-boarding, registration and
-                    licensing issues with the webex calling (brodcloud).
-                  </li>
-  
-                  <li>
-                    Working in coordination with the engineering team to address
-                    complex issues with calling services.
-                  </li>
-  
-                  <li>
-                    Basic know-how of troubleshooting call quality, disconnections and
-                    service issues.
-                  </li>
-                </ul>
-              </div>
-              <div class="exp-description--subsections">
-                <p class="fw-bold heading-font text-center text-md-start">Associate network engineer</p>
-  
-                <p class="other-info fw-bold text-center text-md-start">
-                  Full-time <br>
-                  May 2021 - January 2022 · 9 months <br>
-                  Gurugram, Haryana, India</p>
-  
-                <ul class="pb-3">
-                  <li>
-                    Supporting Cisco's Webex platform (Meetings, Events and Training)
-                    - Cisco cloud collaboration team - Audio and Meetings SBR Team.
-                  </li>
-  
-                  <li>
-                    Troubleshooting issues with PSTN connections to Cisco's
-                    collaboration products - Webex Meetings, events and trainings.
-                  </li>
-  
-                  <li>
-                    Worked with PSTN carriers to address telephony issues with call
-                    disconnections, IVR and DTMF issues.
-                  </li>
-  
-                  <li>
-                    Experienced in troubleshooting QOS issues related to telephony
-                    connections to these collaboration platforms (Audio Quality).
-                  </li>
-  
-                  <li>
-                    Working in coordination with the engineering team to address
-                    complex issues with calling services.
-                  </li>
-  
-                  <li>
-                    Experienced in troubleshooting QOS issues related to telephony
-                    connections to these collaboration platforms (Audio Quality).
-                  </li>
-                </ul>
-              </div>
-  
-              <div class="exp-description--subsections">
-                <p class="fw-bold heading-font text-center text-md-start">Customer Support Engineer</p>
-  
-                <p class="other-info fw-bold text-center text-md-start">
-                  Trainee <br>
-                  Nov 2020 - May 2021 · 7 months <br>
-                  Gurugram, Haryana, India
-                </p>
-  
-                <ul>
-                  <li>
-                    Technical support for Cisco's (Webex) Cloud collaboration
-                    platforms ( Meetings / Events / Trainings )
-                  </li>
-  
-                  <li>
-                    Helped in setting up Webex meetings / Events / Trainings for
-                    end-users and enterprise customers.
-                  </li>
-  
-                  <li>
-                    Helped with basic troubleshooting issues related to the platforms
-                    mentioned above.
-                  </li>
-  
-                  <li>
-                    Helped single / enterprise users with licensing and configuration
-                    issues on control hub.
-                  </li>
-                </ul>
-              </div>
+            <div class="organization-sub-items">
+                <div class="experience-item">
+                    <div class="experience-icon">1</div>
+                    <div class="experience-details">
+                        <div class="job-title">Associate Network Engineer - Webex Calling</div>
+                        <div class="job-dates">Jan 2022 - Dec 2022 • 11 mos</div>
+                        <div class="job-description">Moved to the Webex calling (Broadcloud) team. Supported
+                            enterprise
+                            VoIP telephony, handled IP phone onboarding, and addressed complex calling service
+                            issues.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-icon">2</div>
+                    <div class="experience-details">
+                        <div class="job-title">Associate Network Engineer</div>
+                        <div class="job-dates">May 2021 - Jan 2022 • 9 mos</div>
+                        <div class="job-description">Supported Cisco's Webex platform. Troubleshot PSTN connections,
+                            addressed telephony issues, and worked with the engineering team to resolve complex
+                            problems.</div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-icon">3</div>
+                    <div class="experience-details">
+                        <div class="job-title">Customer Support Engineer</div>
+                        <div class="job-dates">Nov 2020 - May 2021 • 7 mos</div>
+                        <div class="job-description">Provided technical support for Cisco's Webex Cloud
+                            collaboration
+                            platforms. Assisted with meeting setups, licensing, and configuration troubleshooting
+                            for
+                            end-users and enterprises.</div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <!-- CAPGEMININ EXP ENDS HERE -->
-
-    </section>
-    <!--RESUME SECTION ENDS HERE-->
-  </div>
-  <!--Main content container end -->
-
-  <!--**********************************************-->
-
-  <!-- Footer start -->
-  <footer>
-
-    <!-- Footer container -->
-    <div class="container">
-      <!--Footer row-->
-      <div class="row">
-        <div class="col-12 col-md-4 text-center">&copy; Devendra Joshi</div>
-        <div class="col-12 col-md-4 text-center">Made with love and passion</div>
-        <div class="col-12 col-md-4 text-center">
-          <a href="https://twitter.com/devejoshx" class="link-success">Twitter</a>
-          <a href="https://github.com/devejosh/" class="link-success">Github</a>
-        </div>
-      </div>
-      <!-- Footer row end div ^-->
     </div>
-    <!--Footer container end div ^-->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Devendra Joshi. Made with love and passion</p>
+            <div class="social-links">
+                <a href="https://github.com/devejosh" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your-email@example.com" target="_blank" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-  </footer>
-  <!-- Footer end -->
-
-  <!-- ********************************************* -->
-
-  <!-- Bootstrap local JavaScript -->
-  <script src="bootstrap/vendor/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
-  <!-- Resume download script -->
-  <script src="js/resume-dl.js"></script>
+    <script src="scripts.js"></script> <!-- Optional script for animations or interactions -->
 </body>
 
 </html>
