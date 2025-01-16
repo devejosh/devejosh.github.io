@@ -80,7 +80,6 @@ nav .nav-links {
 
 .text h2 {
   font-size: 2.5rem; /* Reduced heading size for mobile */
-  text-align: center;
 }
 
 .text p {
@@ -90,12 +89,12 @@ nav .nav-links {
 /* Experience Section */
 .experience-container {
   width: 90%;
-  margin: 20px auto;
-  padding: 20px;
+  margin: auto;
 }
 
 .experience-title {
-  font-size: 2rem; /* Reduced font size for the title */
+  font-size: 2.5rem; /* Reduced font size for the title */
+  margin-bottom:2rem;
 }
 
 .experience-item {
@@ -104,18 +103,49 @@ nav .nav-links {
 }
 
 .experience-icon {
-  margin-bottom: 10px; /* Adjust space between icon and text */
+  display: none; /* We do not want the icons displayed on small screens */
 }
 
 .experience-details {
   text-align: center; /* Center-align text for mobile */
 }
 
-/* mobile specific modifications for experience section  */
+/* Mobile specific modifications for experience section */
+.organization {
+  margin-top:1rem;
+  display: flex;
+  flex-direction: column;
+}
 
-.job-title, .company-name, .job-dates, .job-description {
-  font-size: 1rem; /* Adjust font sizes */
-  margin-bottom: 10px;
+.organization > .organization-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.organization-sub-items {
+  margin: 1.2rem auto;
+  text-align: center;
+}
+
+/* Consolidate job details styles */
+.company-name,
+.job-dates,
+.job-description,
+.job-title {
+  font-size: 1rem; /* Adjust font size */
+  text-align: center; /* Align text to center */
+  margin-bottom: 8px;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.job-description {
+  margin: 1rem auto;
 }
 
 /* Projects Section */
@@ -147,8 +177,7 @@ footer {
 }
 
 .social-links {
-  flex-direction: column; /* Stack social icons vertically */
-  gap: 1rem;
+  gap: 1.21rem;
 }
 
 .social-links a {
