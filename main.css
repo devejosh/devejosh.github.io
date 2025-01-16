@@ -1,0 +1,423 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe-UI', Roboto, Helvetica, Arial, sans-serif; /* Adding multiple fonts for fallback  */
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Color Palette using CSS Variables */
+:root {
+  --bg-color: #F5F7FA; /* Soft off-white background */
+  --accent-color: #d6f2e6; /* Mint green */
+  --primary-text-color: #222;
+  --secondary-text-color: #555;
+  --dark-footer-bg: #333; /* Dark background for footer */
+  --footer-text-color: #f5f5f5;
+  --border-radius: 8px; /* Global border radius */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-text-color:#d4af37;
+  --nav-link-hover:#d4af37;
+  --nav-link-color:#2c2c2c;
+  --nav-background:#ffffff;
+  --hero-gradient-start:#f0f0f0;
+  --hero-gradient-end :#e9f5f1;
+}
+/* Header Styling */
+header {
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding :1.8rem;
+}
+
+nav .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.7rem;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+nav .nav-links {
+  display:flex;
+  list-style-type: none;
+  flex-grow : 1;
+  justify-content:center;
+  gap: 3rem;
+  margin: 0;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  color : var(--nav-link-color);
+  transition: color 0.3s ease,transfrom 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom:0.6rem;
+  letter-spacing: 0.03rem;
+  position: relative;
+}
+
+nav .nav-links li a:hover {
+  color: var(--nav-link-color);
+  border-bottom:3px solid var(--nav-link-hover);
+  
+}
+
+nav .nav-links li a:link, nav .nav-links li a:visited{
+  color : var(--nav-link-color)
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-text-color);
+}
+
+/* Larger screens - Desktop Layout */
+@media (min-width: 769px) {
+  nav .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background : linear-gradient(135deg, var(--bg-color) 0%, var(--hero-gradient-start) 60%, var(--hero-gradient-end) 100%);
+  padding : 0 1rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+.hero-content .subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  margin-top: 0.5rem;
+}
+
+
+/* About Section */
+#about {
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text {
+  max-width: 600px;
+  padding-right: 2rem; /* Padding to prevent text from touching the edges */
+}
+
+.text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-text-color);
+}
+
+.text p {
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+  line-height:1.7;
+}
+
+
+/* Experience section */
+.experience-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--bg-color);
+}
+
+ .experience-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-text-color);
+  text-align: center;
+} 
+
+
+
+.experience-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.experience-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  margin-right: 20px;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.job-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--primary-text-color);
+  margin-bottom: 5px;
+}
+
+.company-name {
+  font-size: 1.25rem;;
+  color: var(--secondary-text-color);
+  margin-bottom: 5px;
+}
+
+.job-dates {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.job-description {
+  line-height:1.7;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.skills {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+}
+
+.skills svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.organization {
+  margin-bottom: 30px;
+}
+
+.organization > .organization-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.organization-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  margin-right: 20px;
+}
+
+.organization-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.organization-sub-items {
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+      padding: 20px;
+  }
+
+  .experience-title {
+      font-size: 1.5rem;
+  }
+
+  .job-title {
+      font-size: 1.3rem;
+  }
+}
+
+
+/* Projects Section */
+#projects {
+  background-color: var(--accent-color);
+  padding: 5rem 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+#projects h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--primary-text-color);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+.project-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: var(--primary-text-color);
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+}
+
+
+
+/* Footer */
+footer {
+  background: linear-gradient(to top, #333, #555); /* Gradient effect for footer */
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  color: var(--footer-text-color, #fff); /* Default to white if variable not set */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.social-links a {
+  display: flex;
+  text-decoration:none;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Slightly larger for better visibility */
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px var(--shadow-color, rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a:hover{
+  transform: translateY(-3px);
+  background-color: #e9f5f1; /* Soft mint background on hover */
+}
+
+.social-links a i {
+  font-size: 24px;
+  color: #333; /* Icon color */
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover i {
+  color: #0073e6; /* Highlight color for icons on hover */
+}
