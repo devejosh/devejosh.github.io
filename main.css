@@ -22,6 +22,16 @@ body {
   overflow-x: hidden;
 }
 
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-text-color);
+  text-align: center;
+} 
+
+
 /* Color Palette using CSS Variables */
 :root {
   --bg-color: #F5F7FA; /* Soft off-white background */
@@ -39,6 +49,8 @@ body {
   --hero-gradient-start:#f0f0f0;
   --hero-gradient-end :#e9f5f1;
 }
+
+
 /* Header Styling */
 header {
   width: 100%;
@@ -187,6 +199,88 @@ nav .nav-links li a:link, nav .nav-links li a:visited{
 }
 
 
+/* Metro UI-Inspired Tech Stack Section - Desktop */
+#tech-stack {
+  padding: 5rem 2rem;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+
+#tech-stack .section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary-text-color);
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Smaller gap for a tighter grid */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Slightly larger tiles */
+  height: 150px; /* Square tiles */
+  padding: 1rem;
+  background-color: var(--accent-color); /* Default background */
+  border-radius: 8px; /* Subtle rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--data-color); /* Dynamic background color */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.tech-item:hover::before {
+  opacity: 1; /* Show the dynamic background color on hover */
+}
+
+.tech-item i {
+  font-size: 3rem;
+  color: var(--primary-text-color);
+  transition: color 0.3s ease;
+  z-index: 2; /* Ensure the icon is above the background */
+}
+
+.tech-item p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+  z-index: 2; /* Ensure the text is above the background */
+}
+
+.tech-item:hover {
+  transform: scale(1.05); /* Slight scale-up effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.tech-item:hover i,
+.tech-item:hover p {
+  color: #fff; /* White text on hover for better contrast */
+}
+
 /* Experience section */
 .experience-container {
   width: 90%;
@@ -195,17 +289,6 @@ nav .nav-links li a:link, nav .nav-links li a:visited{
   padding: 20px;
   background-color: var(--bg-color);
 }
-
- .experience-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: var(--primary-text-color);
-  text-align: center;
-} 
-
-
 
 .experience-item {
   display: flex;
