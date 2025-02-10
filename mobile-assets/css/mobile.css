@@ -25,6 +25,11 @@ body {
   min-height: 100vh;
 }
 
+.section-title {
+  font-size: 2.5rem; /* Reduced font size for the title */
+  margin-bottom:2rem;
+}
+
 /* Header Styles */
 nav {
   padding: 1rem; /* Reduced padding for smaller screens */
@@ -86,15 +91,56 @@ nav .nav-links {
   font-size: 1rem; /* Adjust text size for better readability on smaller screens */
 }
 
+/* Metro UI-Inspired Tech Stack Section - Mobile */
+@media (max-width: 768px) {
+  #tech-stack {
+    padding: 3rem 1rem;
+  }
+
+  #tech-stack .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tech-grid {
+    gap: 0.5rem; /* Smaller gap for mobile */
+  }
+
+  .tech-item {
+    width: 100px; /* Smaller tiles for mobile */
+    height: 100px;
+    padding: 0.5rem;
+  }
+
+  .tech-item i {
+    font-size: 2rem; /* Smaller icons */
+  }
+
+  .tech-item p {
+    font-size: 0.9rem; /* Smaller text */
+  }
+
+  /* Disable hover effects on mobile */
+  .tech-item:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .tech-item:hover i,
+  .tech-item:hover p {
+    color: var(--primary-text-color);
+  }
+
+  /* Simplify the background color transition for mobile */
+  .tech-item::before {
+    display: none; /* Disable dynamic background color on mobile */
+  }
+}
+
 /* Experience Section */
 .experience-container {
   width: 90%;
   margin: auto;
-}
-
-.experience-title {
-  font-size: 2.5rem; /* Reduced font size for the title */
-  margin-bottom:2rem;
 }
 
 .experience-item {
